@@ -6,5 +6,7 @@ namespace CodePulse.API.NEW.Repositories.Interface
 	public interface ICategoryRepository
 	{
 		Task<CategoryDto> CreateAsync(CreateCategoryRequestDto category);
+
+		Task<List<CategoryDto>> GetAllAsync();
 	}
 }

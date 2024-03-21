@@ -3,6 +3,8 @@ using CodePulse.API.Data;
 using CodePulse.API.NEW.Models.Domain;
 using CodePulse.API.NEW.Models.DTO;
 using CodePulse.API.NEW.Repositories.Interface;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace CodePulse.API.NEW.Repositories.Implementation
 {
@@ -32,6 +34,20 @@ namespace CodePulse.API.NEW.Repositories.Implementation
 			};
 
 			return response;
+		}
+
+		public async Task<List<CategoryDto>> GetAllAsync()
+		{
+			var CatoriesList =  await applicationDbContext.Categories.ToListAsync();
+			var list = new List<CategoryDto>();
+
+			CatoriesList.ForEach(c =>
+				{
+					list.Add(new CategoryDto { Id = c.Id, Name = c.Name, UrlHandle = c.UrlHandle });
+				}
+			);
+
+			return list;
 		}
 	}
 }

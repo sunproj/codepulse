@@ -17,7 +17,13 @@ namespace CodePulse.API.NEW.Controllers
 			categoryRepository= _categoryRepository;
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="createCategoryRequestDto"></param>
+		/// <returns></returns>
 		[HttpPost]
+		[Route("/api/AddCategories")]
 		public async Task<IActionResult> CreateCategory(CreateCategoryRequestDto createCategoryRequestDto)
 		{
 			CategoryDto response = null;
@@ -37,6 +43,13 @@ namespace CodePulse.API.NEW.Controllers
 			var error = new {ErrorCode= StatusCodes.Status400BadRequest ,  ErrorMessage = "Request is Null" };
 
 			return Ok(error);
+		}
+
+		[HttpGet]
+		[Route("/api/GetCategories")]
+		public async Task<IActionResult> GetCategory()
+		{
+			return Ok(await categoryRepository.GetAllAsync());
 		}
 	}
 }
