@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CodePulse.API.NEW.props" />
+</Project>
