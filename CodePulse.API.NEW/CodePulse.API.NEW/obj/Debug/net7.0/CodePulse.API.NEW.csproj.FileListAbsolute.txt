@@ -150,3 +150,9 @@ D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\obj\Debug\ne
 D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\obj\Debug\net7.0\CodePulse.API.NEW.pdb
 D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\obj\Debug\net7.0\CodePulse.API.NEW.genruntimeconfig.cache
 D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\obj\Debug\net7.0\ref\CodePulse.API.NEW.dll
+D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\bin\Debug\net7.0\ui.src\codepulse\angular.json
+D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\bin\Debug\net7.0\ui.src\codepulse\package-lock.json
+D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\bin\Debug\net7.0\ui.src\codepulse\package.json
+D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\bin\Debug\net7.0\ui.src\codepulse\tsconfig.app.json
+D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\bin\Debug\net7.0\ui.src\codepulse\tsconfig.json
+D:\_1code_project\codepulse\api\CodePulse.API.NEW\CodePulse.API.NEW\bin\Debug\net7.0\ui.src\codepulse\tsconfig.spec.json
